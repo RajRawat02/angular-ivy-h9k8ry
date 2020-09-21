@@ -27,9 +27,10 @@ export class TabsComponent implements OnInit {
   count:any = 1;
 
   reset(count): any {
-    console.log("dasdas",count)
     if(count < 4) {
-    return count++;
+    count++;
+    } else {
+    count = 1;
     }
     return count;
   }

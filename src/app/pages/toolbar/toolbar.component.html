@@ -2,3 +2,7 @@
     <li>{{ selectedTab.id }}</li>
     <li>{{ selectedTab.heading }}</li>
 </ul>
+
+<div *ngIf="selectedTab.id === 3">
+        <button (click)='goto(1)' class="btn btn-info">Route to Tab1</button>
+  </div>
