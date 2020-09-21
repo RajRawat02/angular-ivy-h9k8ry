@@ -24,6 +24,7 @@ export class TabsComponent implements OnInit {
     this.dataService.updatedDataSelection(tab);
     this.selectedId = tab.id;
   }
+  
 
   // goto(id){
   //   this.tabset.tab[id].active = true;
