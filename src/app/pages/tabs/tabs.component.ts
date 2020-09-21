@@ -24,7 +24,15 @@ export class TabsComponent implements OnInit {
     this.dataService.updatedDataSelection(tab);
     this.selectedId = tab.id;
   }
-  
+  count:any = 1;
+
+  reset(count): any {
+    console.log("dasdas",count)
+    if(count < 4) {
+    return count++;
+    }
+    return count;
+  }
 
   // goto(id){
   //   this.tabset.tab[id].active = true;
