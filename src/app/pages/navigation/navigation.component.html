@@ -1,0 +1,10 @@
+<div class="row container navbar bg-white">
+    <div class="col-md-12">
+        <button class="btn btn-sm btn-primary" [disabled]="backward" (click)="moveBackward(selectedItem)"><i class="fa fa-arrow-left" aria-hidden="true" ></i></button>
+            <span class="ml-2" >{{ selectedItem.id }}/{{ items.length }}</span>
+        <button class="btn btn-sm btn-primary ml-2" [disabled]="forward" (click)="moveForward(selectedItem)"><i class="fa fa-arrow-right" aria-hidden="true" ></i></button>
+        | selected {{ selectedItem.itemText }} 
+    </div>
+</div> 
+    
+
